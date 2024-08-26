@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +15,11 @@
 </head>
 <body class="bg-gray-200 h-full">
     <div class="flex h-full">
-        <div class="w-1/5 bg-vlu text-white h-screen fixed z-50">
-            <!-- Sidebar -->
-            <div class="flex justify-center">
+        <div class="w-1/5 bg-vlu text-white h-screen fixed z-50 ">
+            <!--sidebar-->
+            <div class=" flex justify-center">
                 <img src="../../img/logo2.png" alt="DocQuestLogo" class="w-52">
-            </div>
+              </div>
             <nav>
                 <ul>
                     <li>
@@ -55,42 +54,72 @@
             </nav>
         </div>
         <div class="flex-1 w-4/5">
-            <div class="flex w-full items-center mb-14 px-3 h-14 bg-white fixed right-0 z-50">
-                <!-- Topbar -->
+            <div class="flex w-4/5 items-center mb-14 px-3 h-14 bg-white fixed right-0 z-50 *:">
+                <!--topbar-->
                 <div class="w-5/6">
-                    <img src="../../img/notif-bell-none.png" alt="Notification Bell" class="w-7">
+                    <img src="../../img/notif-bell-none.png" alt="DocQuestLogo" class="w-7">
                 </div>
                 <div>
                     <h1 class="text-sm w-44">Emmanuelle James Duallo</h1>
                     <h2 class="text-xs text-gray-500">Project Leader</h2>
                 </div>
             </div>
-            <div class="flex flex-col w-full mt-14">
-                <h1 class="text-2xl font-semibold m-7">Profile</h1>
-                <div class="flex flex-col mx-10 mb-7 bg-white h-4/6 rounded-xl">
-                    <div class="flex flex-row m-10">
-                        <div class="w-1/2">
-                            <h1 class="text-lg font-medium mx-10">Name</h1>
-                            <h2 class="text-gray-500 mx-10">Emmanuelle James Duallo</h2>
-                            <h1 class="text-lg font-medium mx-10 mt-5">Gender</h1>
-                            <h2 class="text-gray-500 mx-10">Male</h2>
-                            <h1 class="text-lg font-medium mx-10 mt-5">Birthdate</h1>
-                            <h2 class="text-gray-500 mx-10">01/01/2000</h2>
-                            <h1 class="text-lg font-medium mx-10 mt-5">Email</h1>
-                            <h2 class="text-gray-500 text-lg mx-10">emanuellejames1@gmail.com</h2>
+            <div class="flex flex-col w-4/5  mt-14 absolute right-0">
+                <div>
+                    <h1 class="text-2xl font-semibold m-7">Projects Overview</h1>
+                    <div class="flex flex-row mx-10 mb-7 p-10 bg-white justify-evenly">
+                        <div class="bg-green-400 p-16">
+                            <h1>Approved</h1>
+                            <h1>1</h1>
+                            <a href="">View</a>
                         </div>
-                        <div class="w-1/2">
-                            <h1 class="text-lg font-medium mx-10">Office</h1>
-                            <h2 class="text-gray-500 mx-10">DITS Office</h2>
-                            <h1 class="text-lg font-medium mx-10 mt-5">Roles</h1>
-                            <h2 class="text-gray-500 mx-10">Project Leader</h2>
+                        <div class="bg-yellow-300 p-16">
+                            <h1>Pending</h1>
+                            <h1>1</h1>
+                            <a href="">View</a>
                         </div>
-                    </div>
-                    <div class="flex justify-center m-10">
-                        <button class="w-80 bg-yellow-500 p-2 rounded-md text-white">Edit Profile</button>
+                        <div class="bg-red-500 p-16">
+                            <h1>Rejected</h1>
+                            <h1>1</h1>
+                            <a href="">View</a>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <h1 class="text-2xl font-semibold m-7">Projects</h1>
+                    <div class="flex flex-col mx-10 mb-7 p-10 bg-white justify-evenly">
+                        <div class="flex flex-row justify-evenly w-full">
+                            <h1>Project ID</h1>
+                            <h1>Project Name</h1>
+                            <h1>Type</h1>
+                            <h1>Status</h1>
+                            <div class="flex flex-row justify-evenly">
+                                <h1>searchicon</h1>
+                                <input type="text" placeholder="Search" size="20"
+                                class="w-full  bg-gray-300 p-2 rounded-md">
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="flex flex-row justify-evenly w-full">
+                                <h1>Project ID</h1>
+                                <h1>Project Name</h1>
+                                <h1>Type</h1>
+                                <h1>Status</h1>
+                                <div class="w-1/5">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            
+            
         </div>
     </div>
 </body>
