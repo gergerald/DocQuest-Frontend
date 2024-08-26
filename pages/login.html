@@ -7,10 +7,16 @@
   <title>DocQuest</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style type="text/css" id="operaUserStyle"></style>
+  <style>
+    .poppins-font {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="flex h-auto">
+<body class="flex h-auto poppins-font">
   <div class="flex justify-center w-full bg-bg-login">
     <div class="content-center w-96">
       <div>
@@ -18,19 +24,30 @@
           <div class="mb-3 flex justify-center">
             <img src="../img/logo1.png" alt="DocQuestLogo" style="width: 150px;">
         </div>        
-          <div class="mb-2">
-            <input type="text" id="uname" username="username" placeholder="Username" size="30"
-              class="w-full  bg-gray-300 p-2 rounded-md">
-          </div>
-          <div>
-            <input type="text" id="pword" password="password" placeholder="Password" size="30"
-              class="w-full  bg-gray-300 p-2 rounded-md">
-          </div>
-          <div class="flex justify-start m-3 underline">
-            <a href="#" class="text-gray-500">
-              Forgot password?
-            </a>
-          </div>
+        <div class="mb-2 relative flex items-center">
+          <span class="absolute left-3">
+            <img src="../img/userprofile.png" alt="Profile Icon" class="h-auto w-auto max-h-5 max-w-5">
+          </span>
+          <input type="text" id="uname" name="username" placeholder="username" size="5"
+            class="w-full bg-gray-300 p-2 pl-10 rounded-md">
+        </div>
+        <div class="mb-2 relative flex items-center">
+          <span class="absolute left-3">
+              <img src="../img/userpassword.png" alt="Password Icon" class="h-auto w-auto max-h-5 max-w-5">
+          </span>
+          <input type="password" id="pword" name="password" placeholder="password" size="30"
+            class="w-full bg-gray-300 p-2 pl-10 rounded-md font-poppins" aria-label="Password Input">
+          <button type="button" id="togglePassword" class="absolute right-3">
+              <img src="../img/userpassvisibility.png" alt="Toggle Password Visibility" class="h-auto w-auto max-h-5 max-w-5">
+          </button>
+      </div>      
+        
+      <div class="flex justify-start m-3 underline">
+        <a href="#" class="text-gray-500" style="font-family: 'Poppins', sans-serif;">
+          Forgot password?
+        </a>
+      </div>
+      
           <div class="flex justify-center">
             <button class="w-80 bg-vlu p-2 rounded-md text-white">Login</button>
           </div>
