@@ -16,15 +16,15 @@
 </head>
 <body class="bg-gray-200 h-full">
     <div class="flex h-full">
-        <div class="w-1/5 bg-vlu text-white h-screen fixed z-50 ">
+        <div class="w-1/5 bg-vlu text-white h-screen fixed z-50">
             <!--sidebar-->
-            <div class=" flex justify-center">
+            <div class="flex justify-center">
                 <img src="../../img/logo2.png" alt="DocQuestLogo" class="w-52">
-              </div>
+            </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#" class="text-lg font-bold block px-6 py-3 text-yellow-500">Dashboardd</a>
+                        <a href="#" class="text-lg font-bold block px-6 py-3 text-yellow-500">Dashboard</a>
                     </li>
                     <li>
                         <button onclick="toggleSubMenu(this)" class="text-lg w-full text-left block px-6 py-3 hover:text-yellow-500 focus:outline-none">
@@ -37,7 +37,6 @@
                             <li>
                                 <a href="#" class="block px-6 py-3 hover:text-yellow-500">Create Users</a>
                             </li>
-                            
                         </ul>
                     </li>
                     <li>
@@ -53,7 +52,7 @@
             </nav>
         </div>
         <div class="flex-1 w-4/5">
-            <div class="flex w-4/5 items-center mb-14 px-3 h-14 bg-white fixed right-0 z-50 *:">
+            <div class="flex w-4/5 items-center mb-14 px-3 h-14 bg-white fixed right-0 z-50">
                 <!--topbar-->
                 <div class="w-5/6">
                     <img src="../../img/notif-bell-none.png" alt="DocQuestLogo" class="w-7">
@@ -63,21 +62,87 @@
                     <h2 class="text-xs text-gray-500">Project Leader</h2>
                 </div>
             </div>
-            <div class="flex flex-col w-4/5  mt-14 absolute right-0">
-                <h1 class="text-2xl font-semibold m-7">Create User</h1>
-                <div class="flex flex-col mx-10 mb-7 bg-white  h-4/6 rounded-xl">
-    
-
-
-                      
-                    <div class="flex justify-center m-10">
-                        <button class="w-80 bg-yellow-500 p-2 rounded-md text-white">Edit Profile</button>
+            <div class="flex flex-col w-4/5 mt-14 absolute right-0">
+                <h1 class="text-2xl font-semibold m-7">Users</h1>
+                <h2 class="text-lg font-semibold mx-7 mb-4">Registered Account</h2>
+                <div class="mx-7 bg-white rounded-lg shadow-lg p-6">
+                    <div class="relative mb-4">
+                        <input type="text" class="w-full p-2 pl-10 border border-gray-300 rounded-md" placeholder="Search by name, email...">
+                        <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.9 14.32a7.5 7.5 0 1 1 1.42-1.42l4.25 4.26a1 1 0 0 1-1.42 1.42l-4.25-4.26zM10 15.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z" clip-rule="evenodd"></path>
+                        </svg>
                     </div>
-                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                            <thead class="bg-blue-900 text-white">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-sm leading-4">Full Name</th>
+                                    <th class="px-6 py-3 text-left text-sm leading-4">Email</th>
+                                    <th class="px-6 py-3 text-left text-sm leading-4">Position</th>
+                                    <th class="px-6 py-3 text-left text-sm leading-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">John Doe</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">johndoe@example.com</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">Manager</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm flex justify-end items-center space-x-2">
+                                        <a href="#" class="flex items-center text-blue-900 hover:text-blue-900">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.5 6.5a1.5 1.5 0 1 1 3 0v3a1.5 1.5 0 0 1-3 0v-3z" />
+                                                <path fill-rule="evenodd" d="M10 2a7.5 7.5 0 1 0 0 15h.75V15H10a6.5 6.5 0 1 1 0-13h3.5A6.5 6.5 0 1 1 10 15h.75V17H10a7.5 7.5 0 1 0 0-15z" clip-rule="evenodd" />
+                                            </svg>
+                                            View
+                                        </a>
+                                        <a href="#" class="flex items-center text-green-500 hover:text-green-700">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M7.5 5a1.5 1.5 0 0 1 1.5-1.5h7A1.5 1.5 0 0 1 17.5 5v10a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 7.5 15V5zm1 0V15h7V5h-7z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M4.5 6a1.5 1.5 0 0 1 1.5-1.5h1.75v1.5H6v9h2.25V17H6a2.5 2.5 0 0 1-2.5-2.5v-9A1.5 1.5 0 0 1 4.5 6zm0-1.5A2.5 2.5 0 0 0 2 7v9a2.5 2.5 0 0 0 2.5 2.5h2.25v1.5h1.75v-1.5h7v-1.5H6v-9h9v9H6V7H5.25v1.5H4.5V7a1.5 1.5 0 0 1 1.5-1.5zm4.25 2.5H13.5V7h-3.5V6z" clip-rule="evenodd" />
+                                            </svg>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="flex items-center text-red-500 hover:text-red-700">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M6.5 4.5A1.5 1.5 0 0 1 8 3h4a1.5 1.5 0 0 1 1.5 1.5V4h4v1.5H16V15.5a3.5 3.5 0 0 1-3.5 3.5h-5A3.5 3.5 0 0 1 4 15.5V6h-2V4.5h4v-1zm2 0h4v-1h-4v1z" clip-rule="evenodd" />
+                                            </svg>
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">Jane Smith</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">janesmith@example.com</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm">Developer</td>
+                                    <td class="px-6 py-4 border-b border-gray-200 text-sm flex justify-end items-center space-x-2">
+                                        <a href="#" class="flex items-center text-blue-900 hover:text-blue-900">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.5 6.5a1.5 1.5 0 1 1 3 0v3a1.5 1.5 0 0 1-3 0v-3z" />
+                                                <path fill-rule="evenodd" d="M10 2a7.5 7.5 0 1 0 0 15h.75V15H10a6.5 6.5 0 1 1 0-13h3.5A6.5 6.5 0 1 1 10 15h.75V17H10a7.5 7.5 0 1 0 0-15z" clip-rule="evenodd" />
+                                            </svg>
+                                            View
+                                        </a>
+                                        <a href="#" class="flex items-center text-green-500 hover:text-green-700">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M7.5 5a1.5 1.5 0 0 1 1.5-1.5h7A1.5 1.5 0 0 1 17.5 5v10a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 7.5 15V5zm1 0V15h7V5h-7z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M4.5 6a1.5 1.5 0 0 1 1.5-1.5h1.75v1.5H6v9h2.25V17H6a2.5 2.5 0 0 1-2.5-2.5v-9A1.5 1.5 0 0 1 4.5 6zm0-1.5A2.5 2.5 0 0 0 2 7v9a2.5 2.5 0 0 0 2.5 2.5h2.25v1.5h1.75v-1.5h7v-1.5H6v-9h9v9H6V7H5.25v1.5H4.5V7a1.5 1.5 0 0 1 1.5-1.5zm4.25 2.5H13.5V7h-3.5V6z" clip-rule="evenodd" />
+                                            </svg>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="flex items-center text-red-500 hover:text-red-700">
+                                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M6.5 4.5A1.5 1.5 0 0 1 8 3h4a1.5 1.5 0 0 1 1.5 1.5V4h4v1.5H16V15.5a3.5 3.5 0 0 1-3.5 3.5h-5A3.5 3.5 0 0 1 4 15.5V6h-2V4.5h4v-1zm2 0h4v-1h-4v1z" clip-rule="evenodd" />
+                                            </svg>
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            
-            
         </div>
     </div>
 </body>
