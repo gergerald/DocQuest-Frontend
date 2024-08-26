@@ -1,0 +1,18 @@
+dashboard page -
+proposal1 page -
+proposal2 page -
+proplist page -
+approved page -
+ongoing page -
+disapproved page -
+loadtrainer page -
+cmoa page -
+viewdoc page -
+reviewdoc page -
+editdoc page -
+revision page -
+profpage page - DONE
+editprof page -
+loadtrainer page -
+login page - DONE
+forgotpass page -
